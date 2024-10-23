@@ -1,9 +1,7 @@
-nav{
+/* nav{
     background-color: #ffd2cf;
     display: flex; 
     justify-content: space-evenly;
-    /* padding-top: 10px;
-    padding-bottom:10px; */
     overflow: hidden;
 }
 nav .navitem{
@@ -27,4 +25,4 @@ nav .navitem{
 #meetTitle{
     display:block;
     margin:auto;
-}
+} */
