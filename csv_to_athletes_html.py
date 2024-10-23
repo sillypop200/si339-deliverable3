@@ -52,20 +52,18 @@ def gen_athlete_page(data, outfile):
        <script src="https://kit.fontawesome.com/YOUR_ID.js" crossorigin="anonymous"></script>
 
 
-      <link rel = "stylesheet" href = "css/reset.css">
-      <link rel = "stylesheet" href = "css/style.css">
+     <!-- <link rel = "stylesheet" href = "../css/reset.css"> --> 
+      <link rel = "stylesheet" href = "../css/style.css">
       
 
       <title>{data["name"]}</title>
    </head>
    <body>
-   <a href = "#main">Skip to Main Content</a>
+   <a href = "#main" id = "skip">Skip to Main Content</a>
    <nav>
-     <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="mens.html">Men's Team</a></li>
-        <li><a href="womens.html">Women's Team</a></li>
-     </ul>
+        <a href="index.html">Home Page</a>
+        <a href="mens.html">Men's Team</a>
+        <a href="womens.html">Women's Team</a>
    </nav>
    <header>
       <!--Athlete would input headshot-->

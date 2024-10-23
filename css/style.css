@@ -1,28 +1,82 @@
-/* nav{
-    background-color: #ffd2cf;
-    display: flex; 
-    justify-content: space-evenly;
-    overflow: hidden;
+*{
+    background-color: #eae0d5;
+    font-family: Arial, Helvetica, sans-serif;
 }
-nav .navitem{
+h1, h2{
     text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-    padding: 10px 20px;
-    flex-grow: 1;
+    color:#143109;
+}
+img{
+    width: 250px; /* Define width of the image */
+    height: 250px; /* Define height of the image */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image scales and crops properly */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    border: 4px solid #fff; /* Optional: Adds a border around the image */
+    display: block; /* Ensures the image is a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+#skip{
+    position:fixed;
+    top:-40px;
+    left: 0;
+    padding: 8px;
+    z-index: 100;
+}
+
+#skip:focus{
+    top:10px;
+}
+ nav {
+    background-color: #e9d2f8;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    flex-direction: column; /* Stack links vertically for mobile */
+    padding: 7px;
+    text-align: center;
 }
-.navitem:hover, .navitem:focus{
-    color: white;
-    background-color: black;
-    height: 100%;
-    width: 15%;
-}
-#meetTitle{
-    display:block;
+table{
     margin:auto;
-} */
+}
+table, td, tr, th{
+    text-align: center;
+    border: 1px solid black; 
+    border-collapse:collapse; 
+}
+th, td{
+    padding:15px;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #e9d2f8;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    color: rgb(69, 6, 100);
+    text-decoration:underline;
+}
+
+td a{
+    text-decoration: none;
+}
+#summary p{
+    color: #220C10;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Arrange links horizontally for larger screens */
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        padding: 10px 20px;
+    }
+
+}
+
+
