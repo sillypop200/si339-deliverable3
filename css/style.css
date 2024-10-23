@@ -1,0 +1,30 @@
+nav{
+    background-color: #ffd2cf;
+    display: flex; 
+    justify-content: space-evenly;
+    /* padding-top: 10px;
+    padding-bottom:10px; */
+    overflow: hidden;
+}
+nav .navitem{
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 10px 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navitem:hover, .navitem:focus{
+    color: white;
+    background-color: black;
+    height: 100%;
+    width: 15%;
+}
+#meetTitle{
+    display:block;
+    margin:auto;
+}
